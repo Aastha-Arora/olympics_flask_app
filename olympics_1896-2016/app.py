@@ -14,6 +14,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
+print("Db url: " + os.environ.get('DATABASE_URL', ''))
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL', '')
 
 # Remove tracking modifications
