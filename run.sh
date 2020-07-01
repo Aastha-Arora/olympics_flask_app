@@ -1,0 +1,1 @@
+FLASK_APP=olympics_1896-2016/app.py flask run
